@@ -1,11 +1,13 @@
+import React from "react";
 import './App.css';
+import Greeting from "./Components/Greeting";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Hello world</h1>
-    </div>
+    <>
+      {<Greeting />}
+    </>
   );
-}
+};
 
 export default App;
