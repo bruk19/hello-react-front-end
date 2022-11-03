@@ -2,16 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import { Provider } from "react-redux";
-import store from "./Redux/configureStore";
-import { BrowserRouter as Router } from "react-router-dom";
+import store from "./Redux/store";
+import { BrowserRouter, NavLink } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Router>
+      <BrowserRouter>
+        <NavLink to="/" role="button">
+          <span>Home | </span>
+        </NavLink>
+        <NavLink to="/greeting" role="button">
+          <span>Greeting message</span>
+        </NavLink>
         <App />
-      </Router>
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>
 );

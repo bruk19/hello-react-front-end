@@ -25,6 +25,10 @@ You may also see any lint errors in the console.
 - Library and Framework : `React, React-redux,  React-test-renderer`
 - Technologies used : Github, Git, Gitflow and Linters
 
+## Link to Back-end
+
+[Back-end link](https://github.com/bruk19/hello-rails-back-end)
+
 
 ## Getting Started
 
